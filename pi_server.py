@@ -33,6 +33,10 @@ GPIO.add_event_detect(10,GPIO.RISING,callback=button_callback,bouncetime=2000)
 def main():
     p.text("Start Machine\n")
     print(p.output)
+
+    # while True:
+    #     print("waiting")
+    #     time.sleep(2)
     
     message = input("Press enter to quit\n\n")
     GPIO.cleanup()
